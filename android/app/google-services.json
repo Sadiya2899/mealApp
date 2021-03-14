@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "938216202641",
+    "project_id": "foodapp-2ea1f",
+    "storage_bucket": "foodapp-2ea1f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:938216202641:android:7a804b98ae8f170fd17a30",
+        "android_client_info": {
+          "package_name": "com.example.instacook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "938216202641-53o1qe2ge81k0g2sn709f68nd20sj1mf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9JWUcp_XvgXPGvUBo66UBUjCrmX1w96g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "938216202641-53o1qe2ge81k0g2sn709f68nd20sj1mf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

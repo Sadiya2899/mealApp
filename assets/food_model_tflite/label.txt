@@ -1,0 +1,9 @@
+0 Blackforest Cake
+1 Chocolate Pudding Cake
+2 Pasta
+3 Chickpea Curry
+4 Dosa
+5 Noodles
+6 Chicken Curry
+7 Pizza
+8 Idli
