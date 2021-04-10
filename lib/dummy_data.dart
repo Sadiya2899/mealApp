@@ -6,37 +6,37 @@ import './models/meal.dart';
 const DUMMY_CATEGORIES = const [
   Category(
     id: 'c1',
-    title: 'Chettinad Cousine',
+    title: 'South Indian',
     color: Colors.purple,
   ),
   Category(
     id: 'c2',
-    title: 'Quick & Easy',
+    title: 'Vegetarian',
     color: Colors.red,
   ),
   Category(
     id: 'c3',
-    title: 'Seafoods',
+    title: 'Quick and Easy',
     color: Colors.orange,
   ),
   Category(
     id: 'c4',
-    title: 'Hot and Spicy',
+    title: 'Punjabi',
     color: Colors.amber,
   ),
   Category(
     id: 'c5',
-    title: 'Mughlai',
+    title: 'North Indian',
     color: Colors.blue,
   ),
   Category(
     id: 'c6',
-    title: 'Punjabi',
+    title: 'Non Vegetarian',
     color: Colors.green,
   ),
   Category(
     id: 'c7',
-    title: 'South Indian',
+    title: 'Mughlai',
     color: Colors.lightBlue,
   ),
   Category(
@@ -46,7 +46,7 @@ const DUMMY_CATEGORIES = const [
   ),
   Category(
     id: 'c9',
-    title: 'Vegetarian',
+    title: 'Seafoods',
     color: Colors.pink,
   ),
   Category(
@@ -236,10 +236,10 @@ const DUMMY_MEALS = const [
   Meal(
   id: 'm5',
   categories: [
-    'c6',
-    'c9',
+    'c4',
+    'c2',
   ],
-  title: 'Punjabi-Style Chole Chickpea Curry Recipe',
+  title: 'Chana Masala',
   affordability: Affordability.Affordable,
   complexity: Complexity.Challenging,
   imageUrl:
@@ -366,7 +366,7 @@ const DUMMY_MEALS = const [
   Meal(
     id: 'm8',
     categories: [
-      'c7',
+      'c1',
     ],
     title: 'Idli',
     affordability: Affordability.Affordable,
@@ -390,6 +390,230 @@ const DUMMY_MEALS = const [
       'Transfer the idli batter in the idli stand',
       'Wait for the utensil to cool a bit before scooping the idlis out',
 
+    ],
+    isVegetarian: true,
+  ),
+  Meal(
+    id: 'm9',
+    categories: [
+      'c3',
+    ],
+    title: 'Poha',
+    affordability: Affordability.Affordable,
+    complexity: Complexity.Simple,
+    imageUrl:
+        'https://www.theloveofspice.com/wp-content/uploads/2019/01/kanda-poha-recipe.jpg',
+    duration: 20,
+    ingredients: [
+    '1.5 cups poha 114 grams, use thick poha',
+    '1/4 teaspoon turmeric',
+    '1/2 teaspoon + 1/8 teaspoon salt divided, adjust to taste',
+    '1/3 cup green peas I used frozen, soaked in warm water for 10 minutes',
+    '2 teaspoons oil 10 ml, I used avocado oil',
+    '1/2 teaspoon mustard seeds',
+    '1.5 tablespoons raw peanuts',
+    '1 small red onion chopped',
+    '1 green chili chopped',
+    '10-12 curry leaves',
+    '1/4 teaspoon sugar optional',
+    '1 tablespoon chopped cilantro + more to garnish',
+    '1/2 lemon juice',
+
+      
+    ],
+    steps: [
+      'To a strainer, add flattened rice (poha). Rinse it under running water until it turns soft.',
+      'Add turmeric and 1/2 teaspoon salt to the poha and toss to combine.',
+      'Heat oil in a pan on medium heat.Add the mustard seeds and let them pop.',
+      'Then add the peanuts and saute for a minute or two.',
+      'Then add the chopped onion, green chili and curry leaves. Cook for 2 minutes until the onions soften.',
+      'Add the green peas and mix.',
+      'Then add in the rinsed poha and toss to combine.',
+      'Also add the sugar (if using) and cilantro.And then cover the pan with a lid and turn heat to low for 2 minutes.',
+      'Squeeze in some fresh lemon juice. Garnish poha with more cilantro',
+
+    ],
+    isVegetarian: true,
+  ),
+  Meal(
+    id: 'm10',
+    categories: [
+      'c3',
+    ],
+    title: 'Pakora',
+    affordability: Affordability.Affordable,
+    complexity: Complexity.Simple,
+    imageUrl:
+        'https://i.ytimg.com/vi/slo7Y0I2DJQ/maxresdefault.jpg',
+    duration: 25,
+    ingredients: [
+    '3 Onions thinly sliced (approx 1/8 inch)',
+    '1 cup Besan or Gram flour',
+    '3 tablespoon Rice Flour',
+    '2 teaspoon Chilli Powder or Paprika',
+    'a pinch Hing or Asafoetida ',
+    '¼ teaspoon Ajwain',
+    '2 teaspoon Salt',
+    '½ tbsp Ginger Garlic paste',
+    'a pinch Baking Soda',
+    '1 1/2 cups Oil for deep frying',
+  
+    
+
+      
+    ],
+    steps: [
+      'Thinly Slice Onions.',
+      'Add gram flour, rice flour, chilli powder, hing, ajwain, salt, ginger garlic paste and baking soda. Toss the onions in the dry mixture and smash them with your hands. Wait for a few minutes and toss once or twice. The onions will start releasing water and the dry batter will convert into a semi wet mixture.',
+      'Add just a tablespoon or so of water if required to create a thick-ish coating around the onions.',
+      'Heat oil in a deep pan or kadai over medium flame.',
+      'Gently drop lime sized battered onions into the oil.',
+      'Fry on a medium flame to ensure the pakodas are cooked from inside. This will take about 3-5 minutes.',
+      'Using a skimmer, remove the pakoda and drain the excess oil.',
+      'Sprinkle some chaat masala on top and serve hot!',
+      
+
+    ],
+    isVegetarian: true,
+  ),
+  Meal(
+    id: 'm11',
+    categories: [
+      'c3',
+    ],
+    title: 'Mirchi-Bajji',
+    affordability: Affordability.Affordable,
+    complexity: Complexity.Simple,
+    imageUrl:
+        'https://www.theloveofspice.com/wp-content/uploads/2019/01/kanda-poha-recipe.jpg',
+    duration: 20,
+    ingredients: [
+    '4 green chilli (large)',
+    '2 cup gram flour / besan',
+    '2 tbsp rice flour',
+    '¼ tsp ajwain / carom seeds',
+    '¼ tsp baking soda',
+    '½ tsp salt',
+    '¾ cup water',
+    '1 tbsp oil',
+
+
+
+      
+    ],
+    steps: [
+      'Firstly, take long green chilis and slit at the centre and remove seeds.',
+      'Now prepare the bajji batter by taking 2 cup besan and 2 tbsp rice flour in large mixing bowl.',
+      'Also add ¼ tsp ajwain, ¼ tsp baking soda and ½ tsp salt and mix well',
+      'Add water as requried and prepare a lump free thick batter.'
+      'Further pour 1 tbsp of hot oil over the batter and mix well.',
+      'Now dip the green chilli and coat it with besan batter completely.',
+      'Deep fry in hot oil dropping batter coated chillis slowly',
+      'Keeping the flame on medium, flip over and fry all the sides until the bajjis turn crisp and golden brown.',
+      
+
+    ],
+    isVegetarian: true,
+  ),
+  Meal(
+    id: 'm12',
+    categories: [
+      'c3',
+    ],
+    title: 'Upma',
+    affordability: Affordability.Affordable,
+    complexity: Complexity.Simple,
+    imageUrl:
+        'https://www.vegrecipesofindia.com/wp-content/uploads/2009/08/upma-recipe-1-1.jpg',
+    duration: 20,
+    ingredients: [
+   '1 cup rava – finer variety',
+'1 cup rava – finer variety',
+'1 teaspoon mustard seeds',
+'⅓ cup finely chopped onions or 1 medium-sized onion',
+'1 teaspoon chopped green chilli or 1 green chilli',
+'1 teaspoon finely chopped ginger or 1 inch ginger',
+'1 sprig curry leaves or 10 to 12 curry leaves',
+
+
+
+      
+    ],
+    steps: [
+      'In a pan, heat ghee or oil. add the mustard seeds.',
+      'Now add the finely chopped onions. Saute the onions till they become translucent.',
+      'Then add the chopped green chilly, ginger, curry leaves. Sauté for a few seconds. You can also add 1 dried red chilli at this step.',
+      'Then add 2.5 cups water, sugar and salt as required.'
+      'When the water comes to a rolling boil, lower the flame to its lowest. Then add the rava in 4 to 5 batches with a spoon.',
+      'Cover and allow the rava upma to steam for 2 to 3 minutes on a low heat.',
+      'Then switch off the flame. Now the rava is cooked and the upma is ready',
+ 
+      
+
+    ],
+    isVegetarian: true,
+  ),
+  Meal(
+    id: 'm13',
+    categories: [
+      'c1',
+    ],
+    title: 'Appam',
+    affordability: Affordability.Affordable,
+    complexity: Complexity.Simple,
+    imageUrl:
+        'https://www.vegrecipesofindia.com/wp-content/uploads/2014/04/appam-recipe.jpg',
+    duration: 20,
+    ingredients: [
+   '2 cups regular white rice',
+'1 cup parboiled rice or boiled rice or idli rice',
+'a fistful of poha',
+'½ teaspoon dry active yeast',
+'1 teaspoon salt or add as required',
+'1 to 1.5 cups grated coconut or 1 cup thick coconut milk',
+    ],
+    steps: [
+      'Rinse both the rice varieties together for a couple of times.',
+'Soak both the regular rice, parboiled rice in water for 4 to 5 hours.',
+'Drain and then add them to the grinder. Also add the grated coconut, cooked rice or poha (aval or flattened rice), dry active yeast, salt and sugar.',
+'Add required amount of water and grind all the ingredients to a smooth flowing batter',
+'Pour the batter in a large bowl or pan. Cover and keep aside for fermenting for 8 to 12 hours, depending on the temperature conditions.',
+'Heat a kadai and Spread a ladle full of the batter',
+'Spread a ladle full of the batter',
+
+    ],
+    isVegetarian: true,
+  ),
+  Meal(
+    id: 'm14',
+    categories: [
+      'c2',
+    ],
+    title: 'Paneer Butter Masala',
+    affordability: Affordability.Affordable,
+    complexity: Complexity.Simple,
+    imageUrl:
+        'https://www.vegrecipesofindia.com/wp-content/uploads/2014/04/appam-recipe.jpg',
+    duration: 20,
+    ingredients: [
+   '½ cup vegetable oil ',
+'½ pound paneer, cut into 1/2-inch cubes ',
+'2 tablespoons butter ',
+'2 onions, finely chopped',
+'1 teaspoon garlic paste ',
+'1 tablespoon ground cashews',
+'1 teaspoon ground red chiles',
+'½ teaspoon ground cumin ',
+'½ teaspoon garam masala ',
+'½ cup milk ',
+'½ teaspoon white sugar',
+'½ teaspoon salt', 
+
+    ],
+    steps: [
+      'Heat oil in a large skillet over medium heat; fry paneer in 2 batches until golden, about 5 minutes. Transfer fried paneer to a paper towel-lined plate to drain, retaining vegetable oil in skillet.',
+      'Melt butter in the same skillet over medium heat; cook and stir onion until golden brown, about 10 minutes. Add ginger paste and garlic paste. Continue to cook until fragrant, about 1 minute more. Stir cashews, ground red chiles, cumin, coriander, and garam masala into onion mixture. Cook and stir for 1 minute.',
+      'Stir tomato sauce, half-and-half, milk, sugar, and salt into spice mixture; simmer until thickened, about 5 minutes. Reduce heat to low. Add fried paneer and simmer until heated through, about 5 minutes more.'
     ],
     isVegetarian: true,
   )

@@ -25,15 +25,15 @@ class Meal {
   final bool isVegetarian;
 
   const Meal({
-    @required this.id,
-    @required this.categories,
-    @required this.title,
-    @required this.imageUrl,
-    @required this.ingredients,
-    @required this.steps,
-    @required this.duration,
-    @required this.complexity,
-    @required this.affordability,
-    @required this.isVegetarian,
+     this.id,
+     this.categories,
+     this.title,
+     this.imageUrl,
+     this.ingredients,
+     this.steps,
+     this.duration,
+     this.complexity,
+     this.affordability,
+     this.isVegetarian,
   });
 }

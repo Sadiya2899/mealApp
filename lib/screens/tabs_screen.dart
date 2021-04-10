@@ -1,4 +1,6 @@
 //import 'package:InstaCook/ml/ml_test2.dart';
+import 'package:InstaCook/dummy_data.dart';
+import 'package:InstaCook/models/category.dart';
 import 'package:flutter/material.dart';
 
 import '../widgets/main_drawer.dart';
@@ -32,7 +34,7 @@ class _TabsScreenState extends State<TabsScreen> {
     _pages = [
       {
         'page': CategoriesScreen(),
-        'title': 'InstaCook',
+        'title': 'DigiCook',
       },
       {
         'page': FavoritesScreen(widget.favoriteMeals),
@@ -53,6 +55,13 @@ class _TabsScreenState extends State<TabsScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text(_pages[_selectedPageIndex]['title']),
+        // actions: <Widget>[
+        //   IconButton(onPressed: (){
+        //     showSearch(context: context, delegate: FoodItemsSearch());
+        //   },
+        //   icon: Icon(Icons.search),
+        //   ),
+        // ],
       ),
       drawer: MainDrawer(),
       body: _pages[_selectedPageIndex]['page'],
@@ -109,3 +118,56 @@ class _TabsScreenState extends State<TabsScreen> {
     );
   }
 }
+
+// class FoodItemsSearch extends SearchDelegate<Category>{
+//   @override
+//   List<Widget> buildActions(BuildContext context) {
+      
+//       return [IconButton(icon: Icon(Icons.clear), onPressed: (){
+//         query="";
+//       },)];
+//     }
+  
+//     @override
+//     Widget buildLeading(BuildContext context) {
+      
+//       return IconButton(onPressed: (){
+//         close(context,null);
+//       },icon:Icon(Icons.arrow_back),);
+//     }
+  
+//     @override
+//     Widget buildResults(BuildContext context) {
+//      return Center(child: Text(query,style: TextStyle(fontSize: 20),),);
+//     }
+  
+//     @override
+//     Widget buildSuggestions(BuildContext context) {
+    
+//      final mylist=query.isEmpty?Category
+//      : Category.where((p) => p.title.startsWith(query)).toList();
+     
+//      return mylist.isEmpty?Text('No Results found...',style: TextStyle(fontSize:20),):
+//       ListView.builder(
+//        itemCount: mylist.length,
+//        itemBuilder: (context,index){
+//          final Meal listitem=mylist[index];
+//          return ListTile(
+//            onTap: (){
+//              showResults(context);
+//            },
+//            title: 
+//            Column(
+//              crossAxisAlignment: CrossAxisAlignment.start,
+//              children:<Widget>[
+//               Text(listitem.title,style:TextStyle(fontSize:20),),
+              
+//               Divider()    
+//              ],
+//            ),
+//          );
+
+//        });
+//   }
+
+// }

@@ -74,6 +74,7 @@ class _MyAppState extends State<MyApp> {
       ],
     child: MaterialApp(
       title: 'DeliMeals',
+      
       theme: ThemeData(
         primarySwatch: Colors.blue,
         accentColor: Colors.grey,
